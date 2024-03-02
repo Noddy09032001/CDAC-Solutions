@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="seminar.css">
+    <title>Seminar Assignment</title>
+</head>
+<body>
+    <div class="firstDiv">
+
+        <form class="forms" id="forms">
+            
+            <label for="pname">Participant Name</label>
+            <input type="text" name="pname" id="pname" placeholder="First Name" required><br>
+            <input type="text" name="lname" id="lname" placeholder="Last Name" required><br>
+
+            <label for="email">Email ID</label>
+            <input type="text" name="email" id="email" placeholder="Email ID" required><br>
+
+            <label for="confirm">Confirmed Email ID</label>
+            <input type="text" name="confirm" id="confirm" placeholder="Confirmed Email ID" required><br>
+
+            <label for="seminarType">Seminars</label>
+            <select id="seminarType" name="seminarType">
+                <option value="SOA">SOA</option>
+                <option value="Design Patterns">Design Patterns</option>
+                <option value="Business Intelligence">Business Intelligence</option>
+            </select><br>
+
+            <label>
+                <input type="radio" name="level"  id = "level" value="Introductory">
+                Introductory
+              </label>
+              
+              <label>
+                <input type="radio" name="level" id = "level" value="Intermediate">
+                Intermediate
+              </label>
+            
+              <label>
+                <input type="radio" name="level" id = "level" value="Advanced">
+                Advanced
+              </label><br>
+
+            <button type="button" id="btn1">Calculate Training Cost</button>
+            <p class="tc" id="tc"></p>
+            <button type="button" id="btn2">Display Details</button>
+            <button type="button" id="btn3">Submit <a href="secondPage.html"></a></button>
+        
+        </form>
+
+
+    </div>
+
+    <div class="secondDiv" id="secondDiv">
+
+    </div>
+    <script src="seminar.js"></script>
+</body>
+</html>
